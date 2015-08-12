@@ -1,0 +1,12 @@
+isocreator:
+  build: .
+
+  volumes:
+    - ./data:/data:Z
+    - ./iso:/iso:Z
+
+  environment:
+    CUSTOM_ISO: CentOS-7-Custom.iso
+    BASE_ISO: CentOS-7-x86_64-Minimal-1503-01.iso
+    MIRROR: http://mirror.one.com/centos/7/isos/x86_64
+    SHA1: 7c1e34e95c991175290d704dbdcc6531774cbecb
