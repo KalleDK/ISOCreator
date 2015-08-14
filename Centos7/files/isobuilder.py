@@ -214,7 +214,7 @@ class ISO:
 		output, err = p.communicate()
 		
 		print("  Fixing permission on isolinux.bin")
-		os.chmod(self.cache + "/isolinux/isolinux.bin", 0644)
+		os.chmod(self.cache + "/isolinux/isolinux.bin", 0664)
 		
 	def build(self):
 		if not os.path.isdir(self.cache + "/isolinux"):
