@@ -1,4 +1,4 @@
-FROM kalledk/dockerbase:centos7
+FROM kalledk/centos:7
 
 MAINTAINER Kalle R. Møller
 
