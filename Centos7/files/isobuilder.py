@@ -200,7 +200,7 @@ class ISO:
 			print ("  Extracting /" + file)
 			extractISO(self.dir + "/" + self.base, "/" + file, self.cache + "/isolinux/" + file)
 		
-		file = findISO(self.dir + "/" + self.base, "/repodata/", "*comps.xml").replace("'", "").strip()
+		file = findISO(self.dir + "/" + self.base, "/repodata/", "*minimal*comps.xml").replace("'", "").strip()
 		print ("  Extracting " + file)
 		extractISO(self.dir + "/" + self.base, file, self.cache + "/comps.xml")
 		
